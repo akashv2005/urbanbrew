@@ -92,6 +92,15 @@ hr{
     text-decoration: underline;
     text-decoration-color:#4C3935;
 }
+.card
+{
+    transition: transform .25s;
+    cursor: pointer;
+}
+.card:hover
+{
+    transform: scale(1.04);
+}
 .row
 {
     padding: 15px;
@@ -99,6 +108,47 @@ hr{
 .card-title
 {
     font-weight: 600;
+}
+.story
+{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.story p{
+    margin-top: 15px;
+    margin-left: 15px;
+    max-width: 1000px;
+    line-height: 30px;
+}
+.visit
+{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.visit_para p,.outlet_form
+{
+    margin-left: 15px;
+}
+.outlet_form input,#form_button
+{
+   padding: 10px;
+   border-radius: 20px;
+   font-size: 12px;
+   text-align: center;
+   border: 2px solid #F16341;
+}
+#form_button
+{
+    color: white;
+    background-color: #F16341;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 .img_container
 {
