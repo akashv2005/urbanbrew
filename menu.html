@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Brew-Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image" href="./logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img  class="logo"src="./logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="./orders.html">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="./menu.html">Menu</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="contain">
+        <div class="menu">
+            <ul class="items">
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#snacks">Snacks</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+            </ul>
+        </div>
+        <div class="main">
+           <div class="container" id="drinks">
+            <h1 class="main_heading">Drinks</h1>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Mocha/White Mocha</h5>
+                    <p class="card-text">Small: &#8377;149<br>Medium: &#8377;199<br>Large: &#8377;249</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211029_CaramelMacchiato.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Caramel Macchiato</h5>
+                    <p class="card-text">Small: &#8377;169<br>Medium: &#8377;219<br>Large: &#8377;269</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Java Chip Frappuccino</h5>
+                    <p class="card-text">Small: &#8377;179<br>Medium: &#8377;229<br>Large: &#8377;279</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220323_StrawberryFrapp.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Strawberry Crème</h5>
+                    <p class="card-text">Small: &#8377;179<br>Medium: &#8377;229<br>Large: &#8377;279</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190607_IcedCaffeAmericano.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Americano</h5>
+                    <p class="card-text">Small: &#8377;119<br>Medium: &#8377;169<br>Large: &#8377;219</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_ReserveHazelnutBiancoLatte.jpg?impolicy=1by1_wide_topcrop_630" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Hazelnut Coffee</h5>
+                    <p class="card-text">Small: &#8377;129<br>Medium: &#8377;179<br>Large: &#8377;229</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <div class="container" id="snacks">
+            <h1 class="main_heading">Snacks</h1>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://images.ctfassets.net/27hc2gu70btq/4E9AGa1wGA2thAANSUZNTE/6fc7c986f2050177d2e9c9a9ff8d149d/choco-chip-327x220.jpg?w=327&h=220&q=100&fm=webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Chocolate Chip Cookies</h5>
+                    <p class="card-text">&#8377;29 (4 cookies)</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://images.ctfassets.net/27hc2gu70btq/4QWg8hV9ogMeoEOMkBtEmT/10cc26209004f860eb2b5dfb259ccce3/Oatmeal-Raisin-327x220.jpg?w=327&h=220&q=100&fm=webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Oatmeal Raisin Cookies</h5>
+                    <p class="card-text">&#8377;29 (4 cookies)</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://images.ctfassets.net/27hc2gu70btq/7onP021lVIscP9yaiYV0Jn/e8aa660a320c50afafff3a6f12ca86f7/Chicken-Junglee-Sandwich.jpg?w=327&h=220&q=100&fm=webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Chicken Tikka Sandwich</h5>
+                    <p class="card-text">&#8377;129</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://media.istockphoto.com/id/1085141418/photo/paneer-tikka-sandwich-is-a-popular-indian-version-of-sandwich-using-cottage-cheese-curry-with.jpg?s=612x612&w=0&k=20&c=DmNP5IGd4E9CQi9TfkQqHQ8riYw-PtNr6lqf-C5KuW4=" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Paneer Tikka Sandwich</h5>
+                    <p class="card-text">&#8377;119</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuyVHTQEzxy9PaIYCS5GIcfAYNKT4WfNYQ7Q&s" class="card-img-top" alt="..." height="190px">
+                  <div class="card-body">
+                    <h5 class="card-title">Cheesy Spicy Nachos</h5>
+                    <p class="card-text">&#8377;149</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://spicecravings.com/wp-content/uploads/2020/12/Paneer-kathi-Roll-Featured-1.jpg" class="card-img-top" alt="..." height="190px">
+                  <div class="card-body">
+                    <h5 class="card-title">Paneer Kathi Roll</h5>
+                    <p class="card-text">&#8377;169</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <div class="container" id="desserts">
+            <h1 class="main_heading">Desserts</h1>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://images.ctfassets.net/27hc2gu70btq/44nRoE0E8f0OWauVe85oZ9/73fa0bb34c58b6980705b7523ec47cc6/Tripple-chocolate-muffin-327x220.jpg?w=327&h=220&q=100&fm=webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Triple Chocolate Muffin</h5>
+                    <p class="card-text">&#8377;69</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://glendasfarmhouse.com/wp-content/uploads/2021/12/walnut-brownie-recipe.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Walnut Brownie</h5>
+                    <p class="card-text">&#8377;89</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://theobroma.in/cdn/shop/files/EgglessDutchTrufflePastry.jpg?v=1711099798" class="card-img-top" alt="..." height="190px">
+                  <div class="card-body">
+                    <h5 class="card-title">Dutch Truffle Pastry</h5>
+                    <p class="card-text">&#8377;79</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.barista.co.in/sites/default/files/styles/product/public/2023-07/Brownie%20Fondente.webp?itok=GZ7yMYPE" class="card-img-top" alt="..." height="190px">
+                  <div class="card-body">
+                    <h5 class="card-title">Brownie Fondente</h5>
+                    <p class="card-text">&#8377;119</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://5.imimg.com/data5/SELLER/Default/2023/2/QT/AY/TD/57699179/strawberry-pastry-cake.png" class="card-img-top" alt="..." height="190px">
+                  <div class="card-body">
+                    <h5 class="card-title">Strawberry Pastry</h5>
+                    <p class="card-text">&#8377;69</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5kjNi4uCt_v1OtT3uHVb1e6ldRKeNOKkw1A&s" class="card-img-top" alt="..." height="190px">
+                  <div class="card-body">
+                    <h5 class="card-title">Waffles</h5>
+                    <p class="card-text">&#8377;169</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<footer>
+  <div class="foot">
+      <ul type="none" class="foot-list">
+          <li><h4>Get To Know Us</h4></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+      <ul type="none" class="foot-list">
+          <li><h4>Quick Links</h4></li>
+          <li><a href="#">Be Our Distributor</a></li>
+          <li><a href="#">Franchise With Us</a></li>
+          <li><a href="#">Careers</a></li>
+      </ul>
+      <ul type="none" class="foot-list">
+          <li><h4>Stay Connected</h4></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg> &nbsp;Instagram</a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg> &nbsp;Facebook</a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg> &nbsp;Twitter</a></li>
+      </ul>
+      <ul type="none" class="foot-list">
+          <li><h4>Customer Support</h4></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Ask a Question</a></li>
+          <li><a href="#">FAQs</a></li>
+      </ul>
+  </div>
+  <hr>
+  <div class="copy">
+      <p>&copy; Urban Brew, All rights reserved.</p>
+  </div>
+</footer>
+</html>

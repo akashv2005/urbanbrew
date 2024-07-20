@@ -1,0 +1,151 @@
+.navbar
+{
+    background-color:  #4C3935;
+}
+.logo
+{
+    border-radius: 50%;
+    height: 120px;
+}
+.btn
+{
+    background-color: #F16341;
+    color: white;
+}
+.nav-link{
+    font-size: 1.1rem;
+}
+.nav-link:hover
+{
+    text-decoration: underline;
+    text-decoration-color: #F16341;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.carousel-item img
+{
+    height:500px;
+}
+footer
+{
+    background-color: #4C3935;
+}
+body{
+    font-family: poppins;
+}
+.foot-list,.copy{
+   padding: 15px;
+   color: white;
+}
+.foot-list li a{
+    text-decoration: none;
+    color: white;
+}
+.foot-list li a:hover{
+    color: #F16341;
+}
+.foot 
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+h4
+{
+    color: #F16341;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+hr{
+    color: white;
+}
+.contain
+{
+    padding: 20px;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+.items li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.items li a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: #F16341;
+    color: black;
+}
+.main_heading
+{
+    color: #F16341;
+    margin-left:15px ;
+    font-weight: 600;
+}
+.main_heading:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color:#4C3935;
+}
+.row
+{
+    padding: 15px;
+}
+.card-title
+{
+    font-weight: 600;
+}
+.img_container
+{
+    background-color: #F16341;
+}
+.img_container img
+{
+    position: relative;
+    left: 10%;
+}
+@media(max-width:600px)
+{
+    .foot 
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .carousel-item img
+    {
+        height:300px;
+    }
+}
+@media(max-width:600px)
+{
+    .carousel-control-prev
+    {
+        display: none;
+    }
+    .carousel-control-next
+    {
+        display: none;
+    }
+}
+@media(max-width:600px)
+{
+    .contain
+{
+    padding: 20px;
+    font-size: large;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}
+@media(max-width:1080px)
+{
+    .img_container img
+{
+    width: 50%;
+}
+}
