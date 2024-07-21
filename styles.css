@@ -160,6 +160,46 @@ hr{
     position: relative;
     left: 10%;
 }
+#order_form
+{
+    padding: 15px;
+}
+#signin
+{
+    margin-top: 10px;
+}
+.input_heading
+{
+    padding: 10px;
+    color: #F16341;
+    font-weight: 580;
+}
+.input_heading:hover
+{
+  text-decoration: underline;
+  text-decoration-color: #4C3935;
+}
+.inp_grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    margin-top: 20px;
+}
+#drinks_label
+{
+    font-size: larger;
+}
+b
+{
+    font-weight: 400;
+    font-size: larger;
+}
+#pay
+{
+    color: white;
+    text-decoration: none;
+}
 @media(max-width:600px)
 {
     .foot 
@@ -203,6 +243,16 @@ hr{
 .menu
 {
     margin-bottom: 10px;
+}
+.inp_grid
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 0px;
+}
+.input_heading
+{
+   margin-top: 25px;
 }
 }
 @media(max-width:1080px)

@@ -25,7 +25,7 @@
                 <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" href="./orders.html">Orders</a>
+                <a class="nav-link active text-white" href="./orders.html">Order Online</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active text-white" href="./menu.html">Menu</a>
@@ -38,8 +38,319 @@
           </div>
         </div>
       </nav>
-      <div class="img_container">
+      <!-- <div class="img_container">
         <img src="https://www.cafecoffeeday.com/sites/all/themes/ccd/assets/images/404.png">
+      </div> -->
+      <br>
+      <div id="order_form">
+      <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+      </div>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Andhra Pradesh</option>
+            <option>Bihar</option>
+            <option>Chandigarh</option>
+            <option>Delhi</option>
+            <option>Gujarat</option>
+            <option>Goa</option>
+            <option>Himachal Pradesh</option>
+            <option>Haryana</option>
+            <option>Punjab</option>
+            <option>Uttrakhand</option>
+            <option>Uttar Pradesh</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="inp_grid">
+          <div class="drinks_input">
+            <h2 class="input_heading">Drinks</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+          <label class="form-check-label" for="flexCheckDefault1" id="drinks_label">
+            Mocha/White Mocha
+          </label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1.1">
+            <label class="form-check-label" for="flexRadioDefault1.1">
+              Small: ₹149
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2.1">
+            <label class="form-check-label" for="flexRadioDefault2.1">
+              Medium: ₹199
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3.1">
+            <label class="form-check-label" for="flexRadioDefault3.1">
+              Large: ₹249
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+          <label class="form-check-label" for="flexCheckDefault2" id="drinks_label">
+            Caramel Macchiato
+          </label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1.2">
+            <label class="form-check-label" for="flexRadioDefault1.2">
+              Small: ₹169
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2.2">
+            <label class="form-check-label" for="flexRadioDefault2.2">
+              Medium: ₹219
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3.2">
+            <label class="form-check-label" for="flexRadioDefault3.2">
+              Large: ₹269
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+          <label class="form-check-label" for="flexCheckDefault3" id="drinks_label">
+            Java Chip Frappuccino
+          </label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1.3">
+            <label class="form-check-label" for="flexRadioDefault1.3">
+              Small: ₹179
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2.3">
+            <label class="form-check-label" for="flexRadioDefault2.3">
+              Medium: ₹229
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3.3">
+            <label class="form-check-label" for="flexRadioDefault3.3">
+              Large: ₹279
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+          <label class="form-check-label" for="flexCheckDefault4" id="drinks_label">
+            Strawberry Crème
+          </label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1.4">
+            <label class="form-check-label" for="flexRadioDefault1.4">
+              Small: ₹179
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2.4">
+            <label class="form-check-label" for="flexRadioDefault2.4">
+              Medium: ₹229
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault3.4">
+            <label class="form-check-label" for="flexRadioDefault3.4">
+              Large: ₹279
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+          <label class="form-check-label" for="flexCheckDefault5" id="drinks_label">
+            Americano
+          </label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault1.5">
+            <label class="form-check-label" for="flexRadioDefault1.5">
+              Small: ₹119
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault2.5">
+            <label class="form-check-label" for="flexRadioDefault2.5">
+              Medium: ₹169
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault3.5">
+            <label class="form-check-label" for="flexRadioDefault3.5">
+              Large: ₹219
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+          <label class="form-check-label" for="flexCheckDefault6" id="drinks_label">
+            Hazelnut Coffee
+          </label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault1.6">
+            <label class="form-check-label" for="flexRadioDefault1.6">
+              Small: ₹129
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault2.6">
+            <label class="form-check-label" for="flexRadioDefault2.6">
+              Medium: ₹179
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault3.6">
+            <label class="form-check-label" for="flexRadioDefault3.6">
+              Large: ₹229
+            </label>
+          </div>
+        </div>
+        </div>
+        <div class="snacks_input">
+          <h2 class="input_heading">Snacks</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+            <label class="form-check-label" for="flexCheckDefault7">
+              <b>Chocolate Chip Cookies</b><br>
+              &nbsp;&nbsp;₹29 (4 cookies)
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+            <label class="form-check-label" for="flexCheckDefault8">
+              <b>Oatmeal Raisin Cookies</b><br>
+              &nbsp;&nbsp;₹29 (4 cookies)
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+            <label class="form-check-label" for="flexCheckDefault9">
+              <b>Chicken Tikka Sandwich</b><br>
+              &nbsp;&nbsp;₹129
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
+            <label class="form-check-label" for="flexCheckDefault11">
+              <b>Paneer Tikka Sandwich</b><br>
+              &nbsp;&nbsp;₹119 
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+            <label class="form-check-label" for="flexCheckDefault10">
+              <b>Cheesy Spicy Nachos</b><br>
+              &nbsp;&nbsp;₹149
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+            <label class="form-check-label" for="flexCheckDefault12">
+              <b>Paneer Kathi Roll</b><br>
+              &nbsp;&nbsp;₹169
+            </label>
+          </div>
+        </div>
+        <div class="desserts_input">
+          <h2 class="input_heading">Desserts</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+            <label class="form-check-label" for="flexCheckDefault13">
+              <b>Triple Chocolate Muffin</b><br>
+              &nbsp;&nbsp;₹69
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
+            <label class="form-check-label" for="flexCheckDefault14">
+              <b>Walnut Brownie</b><br>
+              &nbsp;&nbsp;₹89
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15">
+            <label class="form-check-label" for="flexCheckDefault15">
+              <b>Dutch Truffle Pastry</b><br>
+              &nbsp;&nbsp;₹79
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault16">
+            <label class="form-check-label" for="flexCheckDefault16">
+              <b>Brownie Fondente</b><br>
+              &nbsp;&nbsp;₹119 
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17">
+            <label class="form-check-label" for="flexCheckDefault17">
+              <b>Strawberry Pastry</b><br>
+              &nbsp;&nbsp;₹69
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault18">
+            <label class="form-check-label" for="flexCheckDefault18">
+              <b>Waffles</b><br>
+              &nbsp;&nbsp;₹169
+            </label>
+          </div>
+        </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-success" id="signin"><a href="./payments.html" id="pay">Proceed to Payment</a></button>
+        </div>
+      </form>
       </div>
 </body>
 <footer>
