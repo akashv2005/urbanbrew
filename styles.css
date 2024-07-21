@@ -223,7 +223,7 @@ b
         display: none;
     }
 }
-@media(max-width:600px)
+@media(max-width:700px)
 {
     .contain
 {
@@ -249,6 +249,25 @@ b
     display: grid;
     grid-template-columns: repeat(1,1fr);
     margin-top: 0px;
+}
+.input_heading
+{
+   margin-top: 25px;
+}
+}
+@media only screen and (max-width:820px) and (min-width:702px)
+{
+    .inp_grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.contain
+{
+    padding: 20px;
+    font-size: large;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
 }
 .input_heading
 {
