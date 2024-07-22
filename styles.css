@@ -143,6 +143,10 @@ hr{
     max-width: 1000px;
     line-height: 30px;
 }
+#story_image
+{
+    border-radius: 16px;
+}
 #para_head
 {
     padding: 5px;
